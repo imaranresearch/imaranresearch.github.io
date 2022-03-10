@@ -83,8 +83,8 @@ plugins:
 author:
   name   : "Mohammad Imaran"
   avatar : "/assets/images/fn.jpg"
-  bio    : "Computer scientist currently working as a software engineer at Google"
-  location: "Philadelphia, USA"
+  bio    : "Research associate at the University of Edinburgh"
+  location: "Edinburgh, UK"
   links:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
