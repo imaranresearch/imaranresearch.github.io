@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Filip Nikšić"
-name: "Filip Nikšić"
-email: "fniksic@seas.upenn.edu"
+title: "Mohammad Imaran"
+name: "Mohammad Imaran"
+email: "mimaran@ed.ac.uk"
 description: >- # this means to ignore newlines until "baseurl:"
-  Filip Nikšić's personal web page
-url: "https://fniksic.github.io"
-repository: "fniksic/fniksic.github.io"
+  Mohammad Imaran's personal web page
+url: "https://imaranresearch.github.io"
+repository: "imaranresearch/imaranresearch.github.io"
 minimal_mistakes_skin: "default"
 search: false
 
@@ -41,7 +41,7 @@ social:
   type: "Person"
   name: "Filip Nikšić"
   links:
-    - "https://www.facebook.com/fniksic"
+    - "https://www.facebook.com/imrancool19"
     - "https://twitter.com/FilipNiksic"
     - "https://www.linkedin.com/in/fniksic/"
     - "https://github.com/fniksic/"
@@ -81,14 +81,14 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Filip Nikšić"
+  name   : "Mohammad Imaran"
   avatar : "/assets/images/fn.jpg"
   bio    : "Computer scientist currently working as a software engineer at Google"
   location: "Philadelphia, USA"
   links:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/fniksic"
+      url: "https://www.facebook.com/imrancool19"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/FilipNiksic"
@@ -103,7 +103,7 @@ footer:
   links:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/fniksic"
+      url: "https://www.facebook.com/imarancool19"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/FilipNiksic"
