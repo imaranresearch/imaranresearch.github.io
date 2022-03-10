@@ -8,4 +8,4 @@ permalink: /contact/
 Working from home in Glasgow, UK
 ## Email
 
-[fniksic@gmail.com](mailto:imaranresearch@gmail.com)
+[imaranresearch@gmail.com](mailto:imaranresearch@gmail.com)
