@@ -5,8 +5,7 @@ permalink: /contact/
 
 ## Office
 
-Working from home in Philadelphia, PA
-
+Working from home in Glasgow, UK
 ## Email
 
-[fniksic@gmail.com](mailto:fniksic@gmail.com)
+[fniksic@gmail.com](mailto:imaranresearch@gmail.com)
