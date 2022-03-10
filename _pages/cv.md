@@ -8,9 +8,9 @@ classes: wide
 
 ## Education
 
-* 09/2012&ndash;05/2019: **Max Planck Institute for Software Systems (MPI-SWS)**
+* 07/2016&ndash;10/2021: **Monash University and Indian Institute of Technology Bombay**
 
-  Doctor of Engineering (Dr.-Ing.) degree by Technische Universität Kaiserslautern
+  Doctor of Philosophy -- BioPhysics Engineering (Dr.-Ing.) degree by Technische Universität Kaiserslautern
 * 10/2009&ndash;10/2011: **Department of Mathematics, University of Zagreb**
 
   Enrolled in a doctoral program in mathematics
