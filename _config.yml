@@ -32,19 +32,19 @@ analytics:
 
 # Social Sharing
 twitter:
-  username: "FilipNiksic"
+  username: "Human_2415"
 facebook:
-  username: "fniksic"
+  username: "Imrancool19"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type: "Person"
-  name: "Filip Nikšić"
+  name: "Mohammad Imaran"
   links:
     - "https://www.facebook.com/imrancool19"
-    - "https://twitter.com/FilipNiksic"
-    - "https://www.linkedin.com/in/fniksic/"
-    - "https://github.com/fniksic/"
+    - "https://twitter.com/Human_2415"
+    - "https://www.linkedin.com/in/imaran.md/"
+    - "https://github.com/imaranresearch/"
 
 # Build settings
 markdown: kramdown
