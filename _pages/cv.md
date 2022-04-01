@@ -42,8 +42,8 @@ Bachelor of Technology -- Chemical Engineering
 ## Technical Skills
 
 * Operating systems: GNU/Linux, Mac OS X, Windows
-* Programming languages: C/C++, FORTRAN,  Python, MATLAB
+* Programming languages: C/C++, Fortran Python,MATLAB
 
 ## Languages
 
-Urdu (native),Hindi (native),English (fluent), Arabic (basic)
+Urdu (native), Hindi (native), English (fluent), Arabic (basic)
