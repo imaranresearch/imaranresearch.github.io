@@ -8,7 +8,7 @@ classes: wide
 
 ## Education
 
-* 07/2016&ndash;10/2021: **Monash University and Indian Institute of Technology Bombay**
+* 07/2016&ndash;10/2021: **Monash University** and **Indian Institute of Technology Bombay**
 
   Doctor of Philosophy -- BioPhysics
 * 10/2009&ndash;10/2011: **Department of Mathematics, University of Zagreb**
