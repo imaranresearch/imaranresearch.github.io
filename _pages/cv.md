@@ -4,7 +4,7 @@ permalink: /cv/
 classes: wide
 ---
 
-[cv.pdf](/assets/files/cv.pdf){: .btn .btn--primary .btn--small}
+//: [cv.pdf](/assets/files/cv.pdf){: .btn .btn--primary .btn--small}
 
 ## Education
 
