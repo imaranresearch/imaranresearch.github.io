@@ -1,5 +1,5 @@
 ---
-title: "New Website"
+title: "100 days in Scotland"
 categories:
   - General
 tags:
