@@ -7,12 +7,7 @@ tags:
   - combinatorics
 ---
 
-With my postdoctoral appointment at the University of Pennsylvania coming to
-an end this summer, I'm in the process of finding a new job. And even though
-this wasn't my first choice when I started the postdoc a year and a half ago,
-I ended up applying for software engineering positions at big tech
-companies. What this means is that I'm facing a scary obstacle&mdash;the
-notorious coding interviews.
+With my postdoctoral appointment at the University of Edinburgh, I am in process of understanding the DEM and LAMMPS code flow in more details. 
 
 To increase my chance of success, or at least to comfort myself that I'm
 actually doing something to prepare for these interviews, I acquired the
