@@ -31,9 +31,6 @@ Bachelor of Technology -- Chemical Engineering
   Fluid Mechanics -II
 * 10/2016&ndash;02/2017: **Indian Institute of Technology Bombay**
 
-  Teaching assistant: Program Analysis (Winter 2016/2017)
-* 04/2014&ndash;07/2014: **Technische Universität Kaiserslautern**
-
   Teaching assistant: Verification of Reactive Systems (Summer 2014)
 * 03/2008&ndash;09/2009: **Indian Institute of Technology Guwahati**
 
