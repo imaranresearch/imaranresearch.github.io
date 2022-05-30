@@ -1,4 +1,3 @@
-
 ---
 title: "Installation of Open-mpi on Mac OS X"
 categories:
