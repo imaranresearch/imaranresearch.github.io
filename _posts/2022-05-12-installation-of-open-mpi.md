@@ -3,8 +3,7 @@ title: "Installation of Open-mpi on Mac OS X"
 categories:
   - software
 tags:
-  - amortized time complexity
-  - combinatorics
+
 ---
 
 Installation of Open MPI is fairly straightforward
