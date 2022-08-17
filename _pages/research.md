@@ -9,6 +9,7 @@ My current research deals with the modelling of irregular shaped complex granula
 
 <h4> Modelling of complex-shaped granular particles in LAMMPS using spherical harmonics </h4>
 <hr>
+___
 
 Broadly, my research interests lie at the intersection of
 programming languages, distributed systems, and formal verification and testing.
