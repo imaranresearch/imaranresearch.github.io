@@ -9,15 +9,15 @@ classes: wide
 ## Education
 
 * 07/2016&ndash;10/2021: **Monash University** and **Indian Institute of Technology Bombay**
-  
+
   Doctor of Philosophy -- BioPhysics
 
 * 07/2014&ndash;06/2016: **Department of Chemical Engineering, Indian Institute of Technology Guwahati**
-  
+
   Master of Technology -- Chemical Engineering
 
 * 07/2010&ndash;06/2014: **Department of Chemical Engineering, Aligarh Muslim University**
-  
+
   Bachelor of Technology -- Chemical Engineering
 
 ## Employment
