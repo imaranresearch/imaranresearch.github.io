@@ -13,7 +13,10 @@ My current research deals with the modelling of irregular shaped complex granula
 <h4> The morphodynamics of invasion of a compliant substrate by active rods </h4>
 <hr>
 
-
+<h4> 
+ Role of surface smoothness on the clustering of self propelled rods
+</h4>
+<hr>
 Broadly, my research interests lie at the intersection of
 programming languages, distributed systems, and formal verification and testing.
 More specifically, I am currently pursuing two research directions. First,
