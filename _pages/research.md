@@ -3,10 +3,6 @@ title: "Research"
 permalink: /research/
 ---
 
-
-
-My current research deals with the modelling of irregular shaped complex granular particles using DEM. I working towards developing a user-package <em> SPHERHARM </em> in LAMMPS.  
-
 <h4> Modelling of complex-shaped granular particles in LAMMPS using spherical harmonics </h4>
 <hr>
  
