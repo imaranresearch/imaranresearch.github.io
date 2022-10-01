@@ -6,32 +6,33 @@ classes: wide
 
 ## Work In Progress
 
-* **Modelling of complex-shaped granular particles in LAMMPS using spherical harmonics.**
+* **Modelling of complex-shaped granular particles in LAMMPS using spherical harmonics**
   _In progress._ \\
-  [repository](https://github.com/angelhof/flumina/](https://github.com/imaranresearch/LAMMPS-SPHERHARM/tree/develop)){: .btn .btn--primary .btn--small}
+  [repository]((https://github.com/imaranresearch/LAMMPS-SPHERHARM/tree/develop)){: .btn .btn--primary .btn--small}
  
 
 ## Papers
 
-* **DiffStream: Differential Output Testing for Stream Processing Programs.**
-  [Konstantinos Kallas](https://angelhof.github.io/),
-  [Filip Niksic](https://fniksic.github.io/),
-  [Caleb Stanford](https://www.cis.upenn.edu/~castan/),
-  [Rajeev Alur](https://www.cis.upenn.edu/~alur/).
-  _In Proceedings of the ACM on Programming Languages, Volume 4, Issue OOPSLA
-  ([**OOPSLA 2020**](https://2020.splashcon.org/track/splash-2020-oopsla))._
-  November 2020. \\
+* **Cluster and conquer: the morphodynamics of invasion of a compliant substrate by active rods**
+
+  _Soft Matter, Issue 32
+  ([**OOPSLA 2020**](https://pubs.rsc.org/en/Content/ArticleLanding/2021/SM/D1SM00860A#!divAbstract))._
+  July 2021. \\
+  <!---
+
   [paper](/assets/files/oopsla2020/diffstream.pdf){: .btn .btn--primary .btn--small}
   [talk](https://youtu.be/SSwpbJuqSL0){: .btn .btn--primary .btn--small}
   [artifact](https://doi.org/10.5281/zenodo.4033001){: .btn .btn--primary .btn--small}
   [repository](https://github.com/fniksic/diffstream){: .btn .btn--primary .btn--small}
+  --->
+
 * **Testing Consensus Implementations Using Communication Closure.**
   [Cezara Drăgoi](https://www.di.ens.fr/~cezarad/),
   [Constantin Enea](https://www.irif.fr/~cenea/),
   [Burcu Kulahcioglu Ozkan](https://people.mpi-sws.org/~burcu/),
   [Rupak Majumdar](https://people.mpi-sws.org/~rupak/),
   [Filip Niksic](https://fniksic.github.io/).
-  _In Proceedings of the ACM on Programming Languages, Volume 4, Issue OOPSLA
+  _In Proceedings of the ACM on Programming Languages, Volume 4, Issue 32
   ([**OOPSLA 2020**](https://2020.splashcon.org/track/splash-2020-oopsla))._
   November 2020. \\
   [paper](/assets/files/oopsla2020/consensus-testing.pdf){: .btn .btn--primary .btn--small}
