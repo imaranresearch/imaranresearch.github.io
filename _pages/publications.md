@@ -16,7 +16,7 @@ classes: wide
 * **Cluster and conquer: the morphodynamics of invasion of a compliant substrate by active rods**
 
   _Soft Matter, Issue 32
-  ([**OOPSLA 2020**](https://pubs.rsc.org/en/Content/ArticleLanding/2021/SM/D1SM00860A#!divAbstract))._
+  ([**doi: 10.1039/d1sm00860a**](https://pubs.rsc.org/en/Content/ArticleLanding/2021/SM/D1SM00860A#!divAbstract))._
   July 2021. \\
   <!---
 
