@@ -18,13 +18,9 @@ classes: wide
   _Soft Matter, Issue 32
   ([**doi: 10.1039/d1sm00860a**](https://pubs.rsc.org/en/Content/ArticleLanding/2021/SM/D1SM00860A#!divAbstract))._
   July 2021. \\
-  <!---
 
-  [paper](/assets/files/oopsla2020/diffstream.pdf){: .btn .btn--primary .btn--small}
-  [talk](https://youtu.be/SSwpbJuqSL0){: .btn .btn--primary .btn--small}
-  [artifact](https://doi.org/10.5281/zenodo.4033001){: .btn .btn--primary .btn--small}
-  [repository](https://github.com/fniksic/diffstream){: .btn .btn--primary .btn--small}
-  --->
+
+ [comment]: <>  [paper](/assets/files/oopsla2020/diffstream.pdf){: .btn .btn--primary .btn--small}
 
 * **Testing Consensus Implementations Using Communication Closure.**
   [Cezara Drăgoi](https://www.di.ens.fr/~cezarad/),
