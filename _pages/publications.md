@@ -33,7 +33,7 @@ classes: wide
 ## Theses
 
 * **Influence of particle smoothness and substrate mechanics on the clustering of self-propelled rods.**
-  [Filip Niksic](https://imaranresearch.github.io/).
+  [Mohammad Imaran](https://imaranresearch.github.io/).
   _Doctoral thesis, Monash University - IIT Bombay._
   February 2022. \\
   [thesis](https://bridges.monash.edu/articles/thesis/Influence_of_particle_smoothness_and_substrate_mechanics_on_the_clustering_of_self-propelled_rods/19217040){: .btn .btn--primary .btn--small}
