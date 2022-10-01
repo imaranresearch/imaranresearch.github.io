@@ -30,19 +30,20 @@ classes: wide
 
 * 01/2019&ndash;05/2019: **Monash University**
 
-  Fluid Mechanics -II
+  Teaching assistant: Fluid Mechanics -II
 
 * 10/2016&ndash;02/2017: **Indian Institute of Technology Bombay**
 
-  Teaching assistant: Verification of Reactive Systems (Summer 2014)
 * 03/2008&ndash;09/2009: **Indian Institute of Technology Guwahati**
 
   
 
 ## Technical Skills
 
-* Operating systems: GNU/Linux, Mac OS X, Windows
 * Programming languages: C/C++, Fortran, Python, MATLAB, R, HTML
+* Utilities: High performance computing, Parallel computing, Git, Github, Jupyter Notebook, LATEX, Linux
+* Software packages: LAMMPS, HOOMD-blue, Packmol, Moltemplate, Ovito, VMD
+* Frameworks: Pandas, Scikit-learn, Numpy, Matplotlib, Seaborn
 
 ## Languages
 
