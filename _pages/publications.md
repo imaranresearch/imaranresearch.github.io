@@ -9,7 +9,7 @@ classes: wide
 * **Modelling of complex-shaped granular particles in LAMMPS using spherical harmonics.**
   _In progress._ \\
   [repository](https://github.com/angelhof/flumina/](https://github.com/imaranresearch/LAMMPS-SPHERHARM/tree/develop)){: .btn .btn--primary .btn--small}
-  <[examples](https://github.com/angelhof/flumina-examples){: .btn .btn--primary .btn--small}>
+ 
 
 ## Papers
 
