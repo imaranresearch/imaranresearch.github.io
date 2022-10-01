@@ -22,7 +22,7 @@ classes: wide
 
 
 * **Stigmergic furrowing by an active suspension in a soft substrate**
-  _22nd Australasian Fluid MechanicsbConference (AFMC), 2020, Volume 4, Issue 32
+  _22nd Australasian Fluid MechanicsbConference (AFMC), 2020
   ([**doi: 10.14264/cac8c23**](https://espace.library.uq.edu.au/data/UQ_cac8c23/AFMC2020_Revised_paper_236.pdf?Expires=1664618853&Key-Pair-Id=APKAJKNBJ4MJBJNC6NLQ&Signature=cXG6sL8Gnn73g2f4ORrudYZJW16ukSVmjA4s0ZJF~QyDLp8xk6Vef~I1631Yq4Bt2G1S1UHWbM6idcjUpsJbmNQC4Jj3ARvyZ2sg3qZ6t3mg9zaUF4960OAQEdVgQOzLx~N2tsaF~LEpv81xVQ65mRv2~TxN5FR35rNafFxLfIIoL5hBJE9rhAtXcOMTA9xoATEyk7xJWXyUjIo9XGSZfhpu~mu3jwKRNZVPgatgvrp9LcZU0y0g3632O~tefNrGayFvW2AsHN9H8h5odapHR7jKvDSnfSIL0C772DmyM5oKuLNA2cEYZLg69KIv9hIUwioOknd1hQnbs3PSJDHUSw__))._
   December 2020. 
 
