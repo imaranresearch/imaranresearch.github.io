@@ -6,14 +6,10 @@ classes: wide
 
 ## Work In Progress
 
-* **Stream Processing With Dependency-Guided Synchronization.**
-  [Konstantinos Kallas](https://angelhof.github.io/),
-  [Filip Niksic](https://fniksic.github.io/),
-  [Caleb Stanford](https://www.cis.upenn.edu/~castan/),
-  [Rajeev Alur](https://www.cis.upenn.edu/~alur/).
+* **Modelling of complex-shaped granular particles in LAMMPS using spherical harmonics.**
   _In progress._ \\
-  [repository](https://github.com/angelhof/flumina/){: .btn .btn--primary .btn--small}
-  [examples](https://github.com/angelhof/flumina-examples){: .btn .btn--primary .btn--small}
+  [repository](https://github.com/angelhof/flumina/](https://github.com/imaranresearch/LAMMPS-SPHERHARM/tree/develop)){: .btn .btn--primary .btn--small}
+  #[examples](https://github.com/angelhof/flumina-examples){: .btn .btn--primary .btn--small}
 
 ## Papers
 
