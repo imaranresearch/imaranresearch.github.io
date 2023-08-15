@@ -34,7 +34,7 @@ analytics:
 twitter:
   username: "Human_2415"
 facebook:
-  username: "Imrancool19"
+  username: "imrancool19"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -83,8 +83,8 @@ plugins:
 author:
   name   : "Mohammad Imaran"
   avatar : "/assets/images/dp1.jpg"
-  bio    : "Research associate at the University of Edinburgh"
-  location: "Edinburgh, UK"
+  bio    : "Process Modelling and Data Scientist at Pfizer"
+  location: " "
   links:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
