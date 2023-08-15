@@ -83,7 +83,7 @@ plugins:
 author:
   name   : "Mohammad Imaran"
   avatar : "/assets/images/dp1.jpg"
-  bio    : "Process Modelling and Data Scientist at Pfizer"
+  bio    : "Process Modeller and Data Scientist at Pfizer"
   location: " "
   links:
     - label: "Facebook"
