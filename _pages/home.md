@@ -2,8 +2,6 @@
 title: "Home"
 permalink: /home/
 ---
-
-
 <p>Welcome!</p>
 
 
