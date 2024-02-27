@@ -1,6 +1,6 @@
 ---
-title: "Research"
-permalink: /research/
+title: "Home"
+permalink: /home/
 ---
 
 <h4> Modelling of complex-shaped granular particles in LAMMPS using spherical harmonics </h4>
