@@ -1,6 +1,6 @@
 ---
-title: "Publications"
-permalink: /publications/
+title: "Research"
+permalink: /research/
 classes: wide
 ---
 
