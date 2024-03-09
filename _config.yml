@@ -84,12 +84,6 @@ author:
   bio    : "Computational Scientist at Science and Technology Facilities Council (STFC), UKRI"
   location: " "
   links:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/imrancool19"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/Human_2415"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/imaran.md/"
@@ -99,12 +93,6 @@ author:
 
 footer:
   links:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/imrancool19"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/Human_2415"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/imaran.md/"
