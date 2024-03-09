@@ -6,10 +6,10 @@ permalink: /contact/
 ## Office
 
 STFC Hartree Centre <br>
-Sci-Tech Daresbury
-Keckwick 
-Daresbury​​​
-Warrington
+Sci-Tech Daresbury  <br>
+Keckwick  <br>
+Daresbury​​​ <br>
+Warrington <br>
 WA4 4AD
 ## Email
 
