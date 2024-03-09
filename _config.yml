@@ -82,7 +82,7 @@ author:
   name   : "Mohammad Imaran"
   avatar : "/assets/images/dp1.jpg"
   bio    : "Computational Scientist at Science and Technology Facilities Council (STFC), UKRI"
-  location: " "
+  location: "STFC Hartree Centre"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
