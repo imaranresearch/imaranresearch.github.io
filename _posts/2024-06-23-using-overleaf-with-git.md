@@ -7,9 +7,6 @@ tags:
   - jekyll
 ---
 
-
-# Using Overleaf with Git
-
 Overleaf, a popular online LaTeX editor, offers seamless collaboration features, but integrating it with Git can further enhance your workflow, especially for those who prefer version control systems. Here’s a quick guide to using Overleaf with Git.
 
 ## Setting Up Overleaf with Git
