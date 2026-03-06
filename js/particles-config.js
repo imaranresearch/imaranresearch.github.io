@@ -2,7 +2,7 @@
 particlesJS('simulation-canvas', {
     "particles": {
         "number": {
-            "value": 80, // Increased density for a realistic powder/fluid look
+            "value":100, // Increased density for a realistic powder/fluid look
             "density": {
                 "enable": true,
                 "value_area": 500
@@ -20,17 +20,17 @@ particlesJS('simulation-canvas', {
             }
         },
         "opacity": {
-            "value": 0.9,
+            "value": 1.0,
             "random": true, // Gives a sense of depth (some particles look further back)
             "anim": {
                 "enable": true,
                 "speed": 1,
-                "opacity_min": 0.3,
+                "opacity_min": 0.6,
                 "sync": false
             }
         },
         "size": {
-            "value": 8, // Varying sizes typical of polydisperse granular media
+            "value":4, // Varying sizes typical of polydisperse granular media
             "random": true,
             "anim": {
                 "enable": false
