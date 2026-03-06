@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Mohamad Imaran | Advanced Process Modelling & HPC</title>
+    <title>Dr. Mohamad Imaran | Research Computing & HPC</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: { extend: { colors: { brand: { 50: '#f0f9ff', 500: '#0ea5e9', 700: '#0369a1', 900: '#0c4a6e' } } } }
         }
+        // Apply dark mode on initial load to prevent flashing
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         } else {
@@ -34,7 +35,7 @@
                         <a href="blog.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Blog</a>
                         <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Contact</a>
                     </div>
-                    <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500 transition-all focus:outline-none">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500 transition-all focus:outline-none" aria-label="Toggle Dark Mode">
                         <span id="theme-toggle-dark-icon" class="hidden text-xl">🌙</span>
                         <span id="theme-toggle-light-icon" class="hidden text-xl">☀️</span>
                     </button>
@@ -43,19 +44,28 @@
         </div>
     </nav>
 
-    <header class="bg-brand-900 dark:bg-slate-900 text-white py-20 lg:py-32 transition-colors duration-300 border-b border-brand-700 dark:border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <header class="bg-brand-900 dark:bg-slate-900 text-white py-20 lg:py-32 transition-colors duration-300 border-b border-brand-700 dark:border-slate-800 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
             
             <div>
                 <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
-                    Advanced Process Modelling & <span class="text-brand-500">HPC</span>
+                    Advanced Process Modelling & <span class="text-brand-500">High-Performance Computing</span>
                 </h1>
                 <p class="text-lg md:text-xl text-slate-300 dark:text-slate-400 mb-8 max-w-2xl">
                     Helping companies optimise workflows, scale simulations, and accelerate industrial R&D with physics-based computational modelling.
                 </p>
                 <div class="flex space-x-4">
-                    <a href="projects.html" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-lg font-semibold transition shadow-lg">View Projects</a>
-                    <a href="contact.html" class="bg-transparent border border-brand-500 hover:bg-brand-800 text-white px-6 py-3 rounded-lg font-semibold transition">Contact Me</a>
+                    <a href="projects.html" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-lg font-semibold transition shadow-lg shadow-brand-500/30">View Projects</a>
+                    <a href="contact.html" class="bg-transparent border border-slate-300 hover:border-white hover:bg-white/10 text-white px-6 py-3 rounded-lg font-semibold transition">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hidden lg:block w-full h-80 xl:h-96 relative cursor-crosshair">
+                <div id="simulation-canvas" class="absolute inset-0 w-full h-full z-0"></div>
+                
+                <div class="absolute bottom-0 right-0 text-xs font-mono text-brand-300/50 select-none pointer-events-none z-10 text-right">
+                    [ SYS_STATUS: ACTIVE ] <br>
+                    [ DEM_PARTICLES: RENDERED ]
                 </div>
             </div>
 
@@ -65,22 +75,22 @@
     <section class="py-20 flex-grow transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Core Capabilities</h2>
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">What I Do</h2>
                 <p class="mt-4 text-slate-500 dark:text-slate-400">Specialised expertise across multiphase systems and computing architectures.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
-                    <div class="text-brand-500 text-3xl mb-4">⚛️</div>
+                    <div class="text-brand-500 text-4xl mb-6">⚛️</div>
                     <h3 class="text-xl font-bold text-brand-900 dark:text-brand-500 mb-3">Multiphase CFD</h3>
                     <p class="text-slate-600 dark:text-slate-400">Reactive system modelling and fluid dynamics for complex industrial applications.</p>
                 </div>
                 <div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
-                    <div class="text-brand-500 text-3xl mb-4">🔬</div>
+                    <div class="text-brand-500 text-4xl mb-6">🔬</div>
                     <h3 class="text-xl font-bold text-brand-900 dark:text-brand-500 mb-3">Granular Flow & DEM</h3>
                     <p class="text-slate-600 dark:text-slate-400">Discrete Element Method simulations for powder and bulk solids processing.</p>
                 </div>
                 <div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
-                    <div class="text-brand-500 text-3xl mb-4">💻</div>
+                    <div class="text-brand-500 text-4xl mb-6">💻</div>
                     <h3 class="text-xl font-bold text-brand-900 dark:text-brand-500 mb-3">HPC Optimisation</h3>
                     <p class="text-slate-600 dark:text-slate-400">Scaling simulations utilizing GPU acceleration, MPI, and OpenACC frameworks.</p>
                 </div>
