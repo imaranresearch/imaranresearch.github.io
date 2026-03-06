@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Mohamad Imaran</title>
+    <title>Dr. Mohamad Imaran | Advanced Process Modelling & HPC</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         // Tailwind Configuration for Dark Mode
@@ -26,94 +26,40 @@
         }
     </script>
 </head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans antialiased flex flex-col min-h-screen transition-colors duration-300">
 
-<nav class="bg-white dark:bg-slate-900 shadow-sm sticky top-0 z-50 transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16 items-center">
-            <div class="flex-shrink-0 font-bold text-xl text-brand-900 dark:text-brand-500">
-                <a href="index.html">Mohamad Imaran</a>
-            </div>
-            
-            <div class="flex items-center space-x-8">
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Home</a>
-                    <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Projects</a>
-                    <a href="cv.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">CV</a>
-                    <a href="blog.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Blog</a>
-                    <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Contact</a>
-                </div>
-
-                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500 transition-all">
-                    <span id="theme-toggle-dark-icon" class="hidden">🌙</span>
-                    <span id="theme-toggle-light-icon" class="hidden">☀️</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</nav>
-<script>
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const darkIcon = document.getElementById('theme-toggle-dark-icon');
-    const lightIcon = document.getElementById('theme-toggle-light-icon');
-
-    // Set icons on load
-    if (document.documentElement.classList.contains('dark')) {
-        lightIcon.classList.remove('hidden');
-    } else {
-        darkIcon.classList.remove('hidden');
-    }
-
-    themeToggleBtn.addEventListener('click', function() {
-        // toggle icons
-        darkIcon.classList.toggle('hidden');
-        lightIcon.classList.toggle('hidden');
-
-        if (localStorage.getItem('color-theme')) {
-            if (localStorage.getItem('color-theme') === 'light') {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-            }
-        } else {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.setItem('color-theme', 'light');
-            } else {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('color-theme', 'dark');
-            }
-        }
-    });
-</script>
-
-<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
-
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="bg-white dark:bg-slate-900 shadow-sm sticky top-0 z-50 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 font-bold text-xl text-brand-900">
+                <div class="flex-shrink-0 font-bold text-xl text-brand-900 dark:text-brand-500">
                     <a href="index.html">Mohamad Imaran</a>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-brand-700 font-semibold border-b-2 border-brand-500 pb-1">Home</a>
-                    <a href="projects.html" class="text-slate-500 hover:text-brand-700 transition">Projects</a>
-                    <a href="cv.html" class="text-slate-500 hover:text-brand-700 transition">CV</a>
-                    <a href="blog.html" class="text-slate-500 hover:text-brand-700 transition">Blog</a>
-                    <a href="contact.html" class="text-slate-500 hover:text-brand-700 transition">Contact</a>
+                
+                <div class="flex items-center space-x-8">
+                    <div class="hidden md:flex space-x-8">
+                        <a href="index.html" class="text-brand-700 dark:text-brand-500 font-semibold border-b-2 border-brand-500 pb-1">Home</a>
+                        <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Projects</a>
+                        <a href="cv.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">CV</a>
+                        <a href="blog.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Blog</a>
+                        <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Contact</a>
+                    </div>
+
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500 transition-all focus:outline-none">
+                        <span id="theme-toggle-dark-icon" class="hidden text-xl">🌙</span>
+                        <span id="theme-toggle-light-icon" class="hidden text-xl">☀️</span>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="bg-brand-900 text-white py-20 lg:py-32">
+    <header class="bg-brand-900 dark:bg-slate-900 text-white py-20 lg:py-32 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
                 <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
                     Advanced Process Modelling & <span class="text-brand-500">HPC</span>
                 </h1>
-                <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl">
+                <p class="text-lg md:text-xl text-slate-300 dark:text-slate-400 mb-8 max-w-2xl">
                     Helping companies optimise workflows, scale simulations, and accelerate industrial R&D with physics-based computational modelling.
                 </p>
                 <div class="flex space-x-4">
@@ -122,40 +68,67 @@
                 </div>
             </div>
             <div class="hidden lg:block">
-                <img src="images/test_1.jpg" alt="Computational particles illustration" class="rounded-xl shadow-2xl border border-brand-700 object-cover w-full h-full max-h-96">
+                <img src="images/test_1.jpg" alt="Computational particles illustration" class="rounded-xl shadow-2xl border border-brand-700 dark:border-slate-700 object-cover w-full h-full max-h-96">
             </div>
         </div>
     </header>
 
-    <section class="py-20 bg-white flex-grow">
+    <section class="py-20 bg-white dark:bg-slate-950 flex-grow transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Core Capabilities</h2>
-                <p class="mt-4 text-slate-500">Specialised expertise across multiphase systems and computing architectures.</p>
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Core Capabilities</h2>
+                <p class="mt-4 text-slate-500 dark:text-slate-400">Specialised expertise across multiphase systems and computing architectures.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="bg-slate-50 dark:bg-slate-900 p-8 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition">
                     <div class="text-brand-500 text-3xl mb-4">⚛️</div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-3">Multiphase CFD</h3>
-                    <p class="text-slate-600">Reactive system modelling and fluid dynamics for complex industrial applications.</p>
+                    <h3 class="text-xl font-bold text-brand-900 dark:text-brand-500 mb-3">Multiphase CFD</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Reactive system modelling and fluid dynamics for complex industrial applications.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="bg-slate-50 dark:bg-slate-900 p-8 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition">
                     <div class="text-brand-500 text-3xl mb-4">🔬</div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-3">Granular Flow & DEM</h3>
-                    <p class="text-slate-600">Discrete Element Method simulations for powder and bulk solids processing.</p>
+                    <h3 class="text-xl font-bold text-brand-900 dark:text-brand-500 mb-3">Granular Flow & DEM</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Discrete Element Method simulations for powder and bulk solids processing.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="bg-slate-50 dark:bg-slate-900 p-8 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition">
                     <div class="text-brand-500 text-3xl mb-4">💻</div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-3">HPC Optimisation</h3>
-                    <p class="text-slate-600">Scaling simulations utilizing GPU acceleration, MPI, and OpenACC frameworks.</p>
+                    <h3 class="text-xl font-bold text-brand-900 dark:text-brand-500 mb-3">HPC Optimisation</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Scaling simulations utilizing GPU acceleration, MPI, and OpenACC frameworks.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 py-8 text-center text-slate-400">
+    <footer class="bg-slate-900 dark:bg-black py-8 text-center text-slate-400 transition-colors duration-300">
         <p>&copy; 2026 Dr. Mohamad Imaran. All rights reserved.</p>
     </footer>
 
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+        // Initial Icon Setup
+        if (document.documentElement.classList.contains('dark')) {
+            lightIcon.classList.remove('hidden');
+        } else {
+            darkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            // Toggle icons
+            darkIcon.classList.toggle('hidden');
+            lightIcon.classList.toggle('hidden');
+
+            // Toggle Dark Class & Update LocalStorage
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        });
+    </script>
 </body>
 </html>
