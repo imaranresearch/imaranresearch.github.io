@@ -1,79 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <title>Research Computing – HPC & Process Modelling</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mohamad Imaran | Research Computing & HPC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { 50: '#f0f9ff', 500: '#0ea5e9', 700: '#0369a1', 900: '#0c4a6e' } }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-<!-- Navigation -->
-<nav class="container">
-    <h1>Mohamad Imaran</h1>
-    <ul>
-        <li><a href="#services">What I Do</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-xl text-brand-900">
+                    <a href="index.html">Mohamad Imaran</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-brand-700 font-semibold border-b-2 border-brand-500 pb-1">Home</a>
+                    <a href="projects.html" class="text-slate-500 hover:text-brand-700 transition">Projects</a>
+                    <a href="cv.html" class="text-slate-500 hover:text-brand-700 transition">CV</a>
+                    <a href="blog.html" class="text-slate-500 hover:text-brand-700 transition">Blog</a>
+                    <a href="contact.html" class="text-slate-500 hover:text-brand-700 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<!-- Hero -->
-<section class="hero container">
-    <div class="hero-text">
-        <h1>Advanced Process Modelling & High-Performance Computing</h1>
-        <p>Helping companies optimise workflows, scale simulations, and accelerate industrial R&D with physics-based computational modelling and HPC solutions.</p 
-    </div>
-    <div class="hero-img">
-        <img src="da41a3c0-f9f1-4a28-a93f-909c5529b724.png" alt="Computational particles illustration">
-    </div>
-</section>
+    <header class="bg-brand-900 text-white py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Advanced Process Modelling & <span class="text-brand-500">HPC</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl">
+                    Helping companies optimise workflows, scale simulations, and accelerate industrial R&D with physics-based computational modelling.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="projects.html" class="bg-brand-500 hover:bg-brand-700 text-white px-6 py-3 rounded-lg font-semibold transition">View Projects</a>
+                    <a href="contact.html" class="bg-transparent border border-brand-500 hover:bg-brand-800 text-white px-6 py-3 rounded-lg font-semibold transition">Contact Me</a>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <div class="aspect-video bg-brand-700 rounded-xl flex items-center justify-center border border-brand-500 shadow-2xl">
+                    <span class="text-brand-50">[ Image: Computational Particles ]</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<!-- Services -->
-<section id="services" class="section section-alt container">
-    <h2>What I Do</h2>
-    <ul>
-        <li>Multiphase CFD and reactive system modelling</li>
-        <li>Granular flow and DEM simulations</li>
-        <li>HPC optimisation: GPU, MPI, OpenACC</li>
-        <li>Custom scientific software and workflow development</li>
-        <li>Scale-up and process benchmarking</li>
-    </ul>
-</section>
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Core Capabilities</h2>
+                <p class="mt-4 text-slate-500">Specialised expertise across multiphase systems and computing architectures.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Multiphase CFD</h3>
+                    <p class="text-slate-600">Reactive system modelling and fluid dynamics for complex industrial applications.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Granular Flow & DEM</h3>
+                    <p class="text-slate-600">Discrete Element Method simulations for powder and bulk solids processing.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">HPC Optimisation</h3>
+                    <p class="text-slate-600">Scaling simulations utilizing GPU acceleration, MPI, and OpenACC frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Industries -->
-<section id="industries" class="section container">
-    <h2>Industries I Work With</h2>
-    <ul>
-        <li>Energy & CCUS: adsorption systems and reactors</li>
-        <li>Pharmaceuticals & Fine Chemicals: process optimisation & scale-up</li>
-        <li>Powder & Bulk Solids: granular flow and DEM-based processes</li>
-        <li>Advanced Engineering & Research: HPC and algorithm development</li>
-    </ul>
-</section>
-
-<!-- Experience -->
-<section id="experience" class="section section-alt container">
-    <h2>Experience</h2>
-    <ul>
-        <li> Computational Scientist – STFC, UK</li>
-        <li>Process Modeller & Data Scientist – Pfizer</li>
-        <li>Research Associate – DEM & Granular Systems, University of Edinburgh</li>
-        <li>PhD – Active Matter & Stochastic Modelling, Monash University & IIT Bombay</li>
-    </ul>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section container">
-    <h2>Contact</h2>
-    <p>Email: your.email@domain.com</p>
-    <p>Location: United Kingdom</p>
-    <p>Engagement: Project-based consulting or technical advisory</p>
-</section>
-
-<footer>
-    <p>© 2026 Mohammad Imaran</p>
-</footer>
+    <footer class="bg-slate-900 py-8 text-center text-slate-400">
+        <p>&copy; 2026 Dr. Mohamad Imaran. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
