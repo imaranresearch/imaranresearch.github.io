@@ -15,7 +15,7 @@
         }
     </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,19 +44,17 @@
                     Helping companies optimise workflows, scale simulations, and accelerate industrial R&D with physics-based computational modelling.
                 </p>
                 <div class="flex space-x-4">
-                    <a href="projects.html" class="bg-brand-500 hover:bg-brand-700 text-white px-6 py-3 rounded-lg font-semibold transition">View Projects</a>
+                    <a href="projects.html" class="bg-brand-500 hover:bg-brand-700 text-white px-6 py-3 rounded-lg font-semibold transition shadow-lg">View Projects</a>
                     <a href="contact.html" class="bg-transparent border border-brand-500 hover:bg-brand-800 text-white px-6 py-3 rounded-lg font-semibold transition">Contact Me</a>
                 </div>
             </div>
             <div class="hidden lg:block">
-                <div class="aspect-video bg-brand-700 rounded-xl flex items-center justify-center border border-brand-500 shadow-2xl">
-                    <span class="text-brand-50">[ Image: Computational Particles ]</span>
-                </div>
+                <img src="images/test_1.jpg" alt="Computational particles illustration" class="rounded-xl shadow-2xl border border-brand-700 object-cover w-full h-full max-h-96">
             </div>
         </div>
     </header>
 
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white flex-grow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-slate-900">Core Capabilities</h2>
@@ -64,14 +62,17 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-brand-500 text-3xl mb-4">⚛️</div>
                     <h3 class="text-xl font-bold text-brand-900 mb-3">Multiphase CFD</h3>
                     <p class="text-slate-600">Reactive system modelling and fluid dynamics for complex industrial applications.</p>
                 </div>
                 <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-brand-500 text-3xl mb-4">🔬</div>
                     <h3 class="text-xl font-bold text-brand-900 mb-3">Granular Flow & DEM</h3>
                     <p class="text-slate-600">Discrete Element Method simulations for powder and bulk solids processing.</p>
                 </div>
                 <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-brand-500 text-3xl mb-4">💻</div>
                     <h3 class="text-xl font-bold text-brand-900 mb-3">HPC Optimisation</h3>
                     <p class="text-slate-600">Scaling simulations utilizing GPU acceleration, MPI, and OpenACC frameworks.</p>
                 </div>
