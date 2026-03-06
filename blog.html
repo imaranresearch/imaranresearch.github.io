@@ -19,7 +19,7 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans antialiased flex flex-col min-h-screen transition-colors duration-300">
 
-    <nav class="bg-white dark:bg-slate-900 shadow-sm sticky top-0 z-50">
+    <nav class="bg-white dark:bg-slate-900 shadow-sm sticky top-0 z-50 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 font-bold text-xl text-brand-900 dark:text-brand-500">
@@ -27,13 +27,13 @@
                 </div>
                 <div class="flex items-center space-x-8">
                     <div class="hidden md:flex space-x-8">
-                        <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Home</a>
-                        <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Projects</a>
-                        <a href="cv.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">CV</a>
+                        <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Home</a>
+                        <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Projects</a>
+                        <a href="cv.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">CV</a>
                         <a href="blog.html" class="text-brand-700 dark:text-brand-500 font-semibold border-b-2 border-brand-500 pb-1">Blog</a>
-                        <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Contact</a>
+                        <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Contact</a>
                     </div>
-                    <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500 transition-all focus:outline-none">
                         <span id="theme-toggle-dark-icon" class="hidden text-xl">🌙</span>
                         <span id="theme-toggle-light-icon" class="hidden text-xl">☀️</span>
                     </button>
@@ -42,17 +42,35 @@
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-16 flex-grow">
-        <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-10">Research Blog</h1>
-        <article class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8">
-            <p class="text-sm text-brand-500 font-semibold mb-2">March 2, 2026</p>
-            <h2 class="text-2xl font-bold dark:text-white hover:text-brand-700 transition"><a href="#">Scaling DEM Solvers with OpenACC</a></h2>
-            <p class="text-slate-600 dark:text-slate-400 mt-3">Insights into accelerating granular flow simulations on modern GPU architectures.</p>
+    <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 py-16 transition-colors duration-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Research & Insights</h1>
+            <p class="text-xl text-slate-500 dark:text-slate-400">Writings on HPC, computational modelling, and industry trends.</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-16 flex-grow space-y-10">
+        <article class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition">
+            <p class="text-sm text-brand-500 font-semibold mb-3 tracking-wide uppercase">March 2, 2026</p>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+                <a href="#" class="hover:text-brand-700 dark:hover:text-brand-500 transition">Accelerating Granular Flow Simulations with OpenACC</a>
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 mb-6">A deep dive into porting legacy CPU-bound DEM solvers to GPU architectures using directive-based programming paradigms to achieve massive speedups.</p>
+            <a href="#" class="text-brand-700 dark:text-brand-500 font-semibold hover:underline">Read Full Article &rarr;</a>
+        </article>
+
+        <article class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition">
+            <p class="text-sm text-brand-500 font-semibold mb-3 tracking-wide uppercase">February 15, 2026</p>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+                <a href="#" class="hover:text-brand-700 dark:hover:text-brand-500 transition">Scale-Up Analytics in Pharma Manufacturing</a>
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 mb-6">Exploring how physical process modelling combined with data science is reducing experimental overhead and accelerating time-to-market for fine chemicals.</p>
+            <a href="#" class="text-brand-700 dark:text-brand-500 font-semibold hover:underline">Read Full Article &rarr;</a>
         </article>
     </main>
 
-    <footer class="bg-slate-900 dark:bg-black py-8 text-center text-slate-400">
-        <p>&copy; 2026 Dr. Mohamad Imaran</p>
+    <footer class="bg-slate-900 dark:bg-black py-8 text-center text-slate-400 transition-colors duration-300">
+        <p>&copy; 2026 Dr. Mohamad Imaran. All rights reserved.</p>
     </footer>
 
     <script src="js/theme.js"></script>

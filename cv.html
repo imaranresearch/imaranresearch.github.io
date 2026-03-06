@@ -19,7 +19,7 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans antialiased flex flex-col min-h-screen transition-colors duration-300">
 
-    <nav class="bg-white dark:bg-slate-900 shadow-sm sticky top-0 z-50">
+    <nav class="bg-white dark:bg-slate-900 shadow-sm sticky top-0 z-50 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 font-bold text-xl text-brand-900 dark:text-brand-500">
@@ -27,13 +27,13 @@
                 </div>
                 <div class="flex items-center space-x-8">
                     <div class="hidden md:flex space-x-8">
-                        <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Home</a>
-                        <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Projects</a>
+                        <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Home</a>
+                        <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Projects</a>
                         <a href="cv.html" class="text-brand-700 dark:text-brand-500 font-semibold border-b-2 border-brand-500 pb-1">CV</a>
-                        <a href="blog.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Blog</a>
-                        <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Contact</a>
+                        <a href="blog.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Blog</a>
+                        <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Contact</a>
                     </div>
-                    <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500 transition-all focus:outline-none">
                         <span id="theme-toggle-dark-icon" class="hidden text-xl">🌙</span>
                         <span id="theme-toggle-light-icon" class="hidden text-xl">☀️</span>
                     </button>
@@ -42,29 +42,71 @@
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-16 flex-grow">
-        <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-12">Experience</h1>
-        <div class="space-y-12">
-            <div class="relative pl-8 border-l-2 border-brand-500">
-                <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-500 ring-4 ring-slate-50 dark:ring-slate-950"></div>
-                <h3 class="text-2xl font-bold dark:text-white">Computational Scientist</h3>
-                <h4 class="text-lg text-brand-700 dark:text-brand-500 font-medium">STFC, UK [cite: 1]</h4>
-            </div>
-            <div class="relative pl-8 border-l-2 border-slate-300 dark:border-slate-700">
-                <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-slate-300 dark:bg-slate-700 ring-4 ring-slate-50 dark:ring-slate-950"></div>
-                <h3 class="text-2xl font-bold dark:text-white">Process Modeller & Data Scientist</h3>
-                <h4 class="text-lg text-brand-700 dark:text-brand-500 font-medium">Pfizer [cite: 1]</h4>
-            </div>
-            <div class="relative pl-8 border-l-2 border-slate-300 dark:border-slate-700">
-                <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-slate-300 dark:bg-slate-700 ring-4 ring-slate-50 dark:ring-slate-950"></div>
-                <h3 class="text-2xl font-bold dark:text-white">PhD – Active Matter</h3>
-                <h4 class="text-lg text-brand-700 dark:text-brand-500 font-medium">Monash University & IIT Bombay [cite: 1]</h4>
-            </div>
+    <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 py-16 transition-colors duration-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Curriculum Vitae</h1>
+            <p class="text-xl text-slate-500 dark:text-slate-400">Bridging the gap between computational research and industrial application.</p>
         </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-16 flex-grow space-y-16">
+        
+        <section>
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-8 inline-block">Professional Experience</h2>
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l-2 border-brand-500">
+                    <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-500 ring-4 ring-slate-50 dark:ring-slate-950"></div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Computational Scientist</h3>
+                    <h4 class="text-lg text-brand-700 dark:text-brand-500 font-medium mb-1">STFC, UK</h4>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Present</p>
+                    <p class="text-slate-600 dark:text-slate-400">Developing advanced algorithms and optimizing computational workflows for high-performance computing environments. Specializing in scaling complex simulations using modern architectures.</p>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-300 dark:border-slate-700">
+                    <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-slate-300 dark:bg-slate-700 ring-4 ring-slate-50 dark:ring-slate-950"></div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Process Modeller & Data Scientist</h3>
+                    <h4 class="text-lg text-brand-700 dark:text-brand-500 font-medium mb-1">Pfizer</h4>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Previous</p>
+                    <p class="text-slate-600 dark:text-slate-400">Applied data science and process modelling to optimise pharmaceutical scale-up and fine chemicals production. Integrated physical modelling with machine learning.</p>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-300 dark:border-slate-700">
+                    <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-slate-300 dark:bg-slate-700 ring-4 ring-slate-50 dark:ring-slate-950"></div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Research Associate</h3>
+                    <h4 class="text-lg text-brand-700 dark:text-brand-500 font-medium mb-1">University of Edinburgh</h4>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Previous</p>
+                    <p class="text-slate-600 dark:text-slate-400">Conducted post-doctoral research focusing on DEM and Granular Systems, contributing to academic papers and industrial codebases.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-8 inline-block">Education</h2>
+            <div class="space-y-8">
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">PhD – Active Matter & Stochastic Modelling</h3>
+                    <h4 class="text-brand-700 dark:text-brand-500 font-medium">Monash University & IIT Bombay</h4>
+                    <p class="text-slate-600 dark:text-slate-400 mt-4">Dual-degree research focusing on theoretical and computational modelling of complex active matter systems. Developed novel stochastic simulation methodologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-8 inline-block">Technical Expertise</h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">Multiphase CFD</span>
+                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">DEM (Discrete Element Method)</span>
+                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">MPI / OpenMP / OpenACC</span>
+                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">C++ / Python / Fortran</span>
+                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">OpenFOAM / LIGGGHTS</span>
+                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">Data Science & Analytics</span>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="bg-slate-900 dark:bg-black py-8 text-center text-slate-400">
-        <p>&copy; 2026 Dr. Mohamad Imaran</p>
+    <footer class="bg-slate-900 dark:bg-black py-8 text-center text-slate-400 transition-colors duration-300">
+        <p>&copy; 2026 Dr. Mohamad Imaran. All rights reserved.</p>
     </footer>
 
     <script src="js/theme.js"></script>
