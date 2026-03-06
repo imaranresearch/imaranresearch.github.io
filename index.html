@@ -1,20 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Mohamad Imaran | Research Computing & HPC</title>
+    <title>Dr. Mohamad Imaran</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+        // Tailwind Configuration for Dark Mode
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
-                    colors: { brand: { 50: '#f0f9ff', 500: '#0ea5e9', 700: '#0369a1', 900: '#0c4a6e' } }
+                    colors: { 
+                        brand: { 50: '#f0f9ff', 500: '#0ea5e9', 700: '#0369a1', 900: '#0c4a6e' } 
+                    }
                 }
             }
         }
+
+        // Script to apply dark mode theme on load
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
     </script>
 </head>
+
+<nav class="bg-white dark:bg-slate-900 shadow-sm sticky top-0 z-50 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <div class="flex-shrink-0 font-bold text-xl text-brand-900 dark:text-brand-500">
+                <a href="index.html">Mohamad Imaran</a>
+            </div>
+            
+            <div class="flex items-center space-x-8">
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Home</a>
+                    <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Projects</a>
+                    <a href="cv.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">CV</a>
+                    <a href="blog.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Blog</a>
+                    <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700">Contact</a>
+                </div>
+
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500 transition-all">
+                    <span id="theme-toggle-dark-icon" class="hidden">🌙</span>
+                    <span id="theme-toggle-light-icon" class="hidden">☀️</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+    // Set icons on load
+    if (document.documentElement.classList.contains('dark')) {
+        lightIcon.classList.remove('hidden');
+    } else {
+        darkIcon.classList.remove('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+        // toggle icons
+        darkIcon.classList.toggle('hidden');
+        lightIcon.classList.toggle('hidden');
+
+        if (localStorage.getItem('color-theme')) {
+            if (localStorage.getItem('color-theme') === 'light') {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            }
+        } else {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        }
+    });
+</script>
+
 <body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
     <nav class="bg-white shadow-sm sticky top-0 z-50">
