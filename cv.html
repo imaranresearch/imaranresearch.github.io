@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV | Dr. Mohamad Imaran</title>
+    <title>CV | Dr. Mohammad Imaran</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,16 +23,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 font-bold text-xl text-brand-900 dark:text-brand-500">
-                    <a href="index.html">Mohamad Imaran</a>
+                    <a href="index.html">Mohammad Imaran</a>
                 </div>
-                <div class="flex items-center space-x-8">
-                    <div class="hidden md:flex space-x-8">
-                        <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Home</a>
-                        <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Projects</a>
+                <div class="flex items-center space-x-2">
+                    <div class="hidden md:flex space-x-8 mr-4">
+                        <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 dark:hover:text-brand-500 transition">Home</a>
+                        <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 dark:hover:text-brand-500 transition">Projects</a>
                         <a href="cv.html" class="text-brand-700 dark:text-brand-500 font-semibold border-b-2 border-brand-500 pb-1">CV</a>
-                        <a href="blog.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Blog</a>
-                        <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Contact</a>
+                        <a href="blog.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 dark:hover:text-brand-500 transition">Blog</a>
+                        <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 dark:hover:text-brand-500 transition">Contact</a>
                     </div>
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Open Menu">
+                        <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                        <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
                     <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500 transition-all focus:outline-none">
                         <span id="theme-toggle-dark-icon" class="hidden text-xl">🌙</span>
                         <span id="theme-toggle-light-icon" class="hidden text-xl">☀️</span>
@@ -40,73 +44,256 @@
                 </div>
             </div>
         </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+            <div class="px-4 py-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Home</a>
+                <a href="projects.html" class="block px-3 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Projects</a>
+                <a href="cv.html" class="block px-3 py-2 rounded-lg text-brand-700 dark:text-brand-500 font-semibold bg-brand-50 dark:bg-slate-800">CV</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Contact</a>
+            </div>
+        </div>
     </nav>
 
     <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 py-16 transition-colors duration-300">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Curriculum Vitae</h1>
-            <p class="text-xl text-slate-500 dark:text-slate-400">Bridging the gap between computational research and industrial application.</p>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <div>
+                <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-2">Curriculum Vitae</h1>
+                <p class="text-lg text-slate-500 dark:text-slate-400">Chemical Engineer · Computational Scientist · HPC Specialist</p>
+            </div>
+            <a href="contact.html" class="inline-block bg-brand-500 hover:bg-brand-700 text-white px-6 py-3 rounded-lg font-semibold transition shadow-md text-sm whitespace-nowrap self-start sm:self-center">
+                Available for Consulting
+            </a>
         </div>
     </header>
 
     <main class="max-w-4xl mx-auto px-4 sm:px-6 py-16 flex-grow space-y-16">
-        
+
+        <!-- Experience -->
         <section>
-            <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-8 inline-block">Professional Experience</h2>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-10 inline-block">Professional Experience</h2>
             <div class="space-y-12">
+
                 <div class="relative pl-8 border-l-2 border-brand-500">
                     <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-500 ring-4 ring-slate-50 dark:ring-slate-950"></div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Computational Scientist</h3>
-                    <h4 class="text-lg text-brand-700 dark:text-brand-500 font-medium mb-1">STFC, UK</h4>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Present</p>
-                    <p class="text-slate-600 dark:text-slate-400">Developing advanced algorithms and optimizing computational workflows for high-performance computing environments. Specializing in scaling complex simulations using modern architectures.</p>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Computational Scientist</h3>
+                        <span class="text-sm font-medium text-brand-500 bg-brand-50 dark:bg-brand-900/30 px-3 py-1 rounded-full mt-2 sm:mt-0 self-start">Feb 2024 – Present</span>
+                    </div>
+                    <h4 class="text-base text-brand-700 dark:text-brand-400 font-medium mb-4">Science and Technology Facilities Council (STFC – UKRI), UK</h4>
+                    <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-2 list-none">
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Led SPH–DEM simulation of a novel hydropower turbine design for an industrial client using DualSPHysics on GPU, modelling air–water multiphase free-surface flow with fluid–solid coupling via Project Chrono for the rotating turbine geometry.</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Implemented a dynamic Langmuir adsorption boundary condition in OpenFOAM with scalar transport and mass transfer coupling for CO₂ direct air capture (DAC) process design.</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Developed CFD models of industrial CO₂ absorption into NaOH solvent (gas–liquid multiphase with reactive species transport); results used directly by UK industrial partners for scale-up decisions.</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Ported sections of the NEMO ocean model to GPU using OpenACC in collaboration with the Met Office; re-implemented a vector-borne disease model in JAX/XLA for GPU-accelerated parameter sweeps.</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Scoped projects with industrial partners, defining work packages and milestones; presented technical results to both engineering and non-technical audiences.</li>
+                    </ul>
                 </div>
 
                 <div class="relative pl-8 border-l-2 border-slate-300 dark:border-slate-700">
                     <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-slate-300 dark:bg-slate-700 ring-4 ring-slate-50 dark:ring-slate-950"></div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Process Modeller & Data Scientist</h3>
-                    <h4 class="text-lg text-brand-700 dark:text-brand-500 font-medium mb-1">Pfizer</h4>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Previous</p>
-                    <p class="text-slate-600 dark:text-slate-400">Applied data science and process modelling to optimise pharmaceutical scale-up and fine chemicals production. Integrated physical modelling with machine learning.</p>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Process Modeller & Data Scientist</h3>
+                        <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-2 sm:mt-0">Apr 2023 – Jan 2024</span>
+                    </div>
+                    <h4 class="text-base text-brand-700 dark:text-brand-400 font-medium mb-4">Pfizer</h4>
+                    <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-2 list-none">
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Calibrated cohesive contact models in EDEM (powder blending) and Rocky (tablet compaction) against angle-of-repose, shear cell, and bulk density data for OSD manufacturing.</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Automated batch DEM parametric sweep campaigns using HyperStudy DoE workflows, reducing experimental overhead per formulation.</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Developed Python pipelines (Pandas, Scikit-learn) for data-driven fitting of DEM contact coefficients, replacing manual trial-and-error workflows.</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Trained 3–5 engineers on EDEM from scratch; team now runs independent DEM blending studies.</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Delivered simulation results and scale-up recommendations to formulation scientists, process engineers, and project governance.</li>
+                    </ul>
                 </div>
 
                 <div class="relative pl-8 border-l-2 border-slate-300 dark:border-slate-700">
                     <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-slate-300 dark:bg-slate-700 ring-4 ring-slate-50 dark:ring-slate-950"></div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Research Associate</h3>
-                    <h4 class="text-lg text-brand-700 dark:text-brand-500 font-medium mb-1">University of Edinburgh</h4>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Previous</p>
-                    <p class="text-slate-600 dark:text-slate-400">Conducted post-doctoral research focusing on DEM and Granular Systems, contributing to academic papers and industrial codebases.</p>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Research Associate (Post-Doctoral)</h3>
+                        <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-2 sm:mt-0">Mar 2022 – Mar 2023</span>
+                    </div>
+                    <h4 class="text-base text-brand-700 dark:text-brand-400 font-medium mb-4">University of Edinburgh, UK</h4>
+                    <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-2 list-none">
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Led development of <strong class="text-slate-700 dark:text-slate-300">SHDEM</strong> — a spherical harmonic-based DEM package for non-convex particle geometries implemented inside LAMMPS. <span class="text-brand-500 font-medium">Published in Computer Physics Communications (2024).</span></li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Implemented and validated contact detection algorithms for non-spherical particles; parallelised the module with MPI and OpenMP for large-scale HPC runs.</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Collaborated with EPCC and Sandia National Laboratory to meet LAMMPS integration standards; authored Sphinx-based documentation and verification cases.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-300 dark:border-slate-700">
+                    <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-slate-300 dark:bg-slate-700 ring-4 ring-slate-50 dark:ring-slate-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">PhD Researcher</h3>
+                        <span class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-2 sm:mt-0">2016 – 2022</span>
+                    </div>
+                    <h4 class="text-base text-brand-700 dark:text-brand-400 font-medium mb-4">Monash University – IIT Bombay (Joint Programme)</h4>
+                    <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-2 list-none">
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Extended LAMMPS in C++ with custom fixes for self-propelled particle dynamics; research on active matter and complex soft systems. Published in <em>Soft Matter</em> (2021).</li>
+                        <li class="flex gap-2"><span class="text-brand-500 flex-shrink-0">›</span>Developed novel stochastic simulation methodologies with applications in soft matter physics and dense suspension rheology.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-10 inline-block">Education</h2>
+            <div class="space-y-4">
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <div>
+                        <h3 class="text-base font-bold text-slate-900 dark:text-white">Ph.D., Computational Biophysics</h3>
+                        <p class="text-brand-700 dark:text-brand-400 text-sm font-medium">Monash University – IIT Bombay</p>
+                    </div>
+                    <span class="text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap">2016 – 2022</span>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <div>
+                        <h3 class="text-base font-bold text-slate-900 dark:text-white">M.Tech., Chemical Engineering</h3>
+                        <p class="text-brand-700 dark:text-brand-400 text-sm font-medium">IIT Guwahati</p>
+                    </div>
+                    <span class="text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap">2014 – 2016</span>
+                </div>
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <div>
+                        <h3 class="text-base font-bold text-slate-900 dark:text-white">B.Tech., Chemical Engineering</h3>
+                        <p class="text-brand-700 dark:text-brand-400 text-sm font-medium">Aligarh Muslim University</p>
+                    </div>
+                    <span class="text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap">2010 – 2014</span>
                 </div>
             </div>
         </section>
 
+        <!-- Skills -->
         <section>
-            <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-8 inline-block">Education</h2>
-            <div class="space-y-8">
-                <div class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">PhD – Active Matter & Stochastic Modelling</h3>
-                    <h4 class="text-brand-700 dark:text-brand-500 font-medium">Monash University & IIT Bombay</h4>
-                    <p class="text-slate-600 dark:text-slate-400 mt-4">Dual-degree research focusing on theoretical and computational modelling of complex active matter systems. Developed novel stochastic simulation methodologies.</p>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-10 inline-block">Technical Skills</h2>
+            <div class="space-y-7">
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Commercial Simulation Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">EDEM</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Rocky</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">HyperStudy</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Ansys SpaceClaim</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">FreeCAD</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Open-Source Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">LAMMPS</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">LIGGGHTS</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">OpenFOAM</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">DualSPHysics</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Project Chrono</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">AMReX</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Cantera</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Simulation Methods</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Multiphase CFD</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">DEM (Spherical & Non-Spherical)</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">SPH & SPH–DEM Coupling</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Reactive Flows & Mass Transfer</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Molecular Dynamics</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Dense Suspension Rheology</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">HPC & Parallel Computing</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">MPI</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">OpenMP</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">OpenACC</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">JAX / XLA</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">GPU Code Transformation</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">SLURM</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Programming & Data</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">C / C++</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Python</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Fortran</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">MATLAB</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Pandas / NumPy / Scikit-learn</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Matplotlib</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">Workflow & Optimisation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">DoE & Parametric Sweeps</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Simulation Automation</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">Data-Driven Model Calibration</span>
+                        <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium">HyperStudy Batch Workflows</span>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Publications -->
         <section>
-            <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-8 inline-block">Technical Expertise</h2>
-            <div class="flex flex-wrap gap-3">
-                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">Multiphase CFD</span>
-                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">DEM (Discrete Element Method)</span>
-                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">MPI / OpenMP / OpenACC</span>
-                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">C++ / Python / Fortran</span>
-                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">OpenFOAM / LIGGGHTS</span>
-                <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-medium">Data Science & Analytics</span>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-10 inline-block">Publications & Conferences</h2>
+            <div class="space-y-5">
+
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-500 mb-2 block">Journal Article</span>
+                    <p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-relaxed">Imaran et al. "Spherical harmonic-based DEM in LAMMPS: implementation, verification and performance assessment." <em class="text-slate-500 dark:text-slate-400">Computer Physics Communications</em>, 2024.</p>
+                    <a href="https://doi.org/10.1016/j.cpc.2024.109290" target="_blank" rel="noopener" class="text-brand-500 hover:underline text-xs mt-2 inline-block">doi:10.1016/j.cpc.2024.109290</a>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-500 mb-2 block">Journal Article</span>
+                    <p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-relaxed">Imaran et al. "Cluster and conquer: morphodynamics of invasion of a compliant substrate by active rods." <em class="text-slate-500 dark:text-slate-400">Soft Matter</em> 17:7459–7465, 2021.</p>
+                    <a href="https://doi.org/10.1039/d1sm00860a" target="_blank" rel="noopener" class="text-brand-500 hover:underline text-xs mt-2 inline-block">doi:10.1039/d1sm00860a</a>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 block">Conference</span>
+                    <p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-relaxed">Imaran et al. "Modelling of complex-shaped granular particles using spherical harmonics." <em class="text-slate-500 dark:text-slate-400">APS March Meeting</em>, 2023; <em class="text-slate-500 dark:text-slate-400">Advances in Particle Technology</em>, Leeds, 2022.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 block">Conference</span>
+                    <p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-relaxed">Imaran et al. "Stigmergic furrowing by an active suspension in a soft substrate." <em class="text-slate-500 dark:text-slate-400">22nd AFMC</em>, Brisbane, 2020.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 block">Conference</span>
+                    <p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-relaxed">M. Imaran & A. Singh. "Stokesian dynamics simulation of shear rate dependent rheology of dense suspensions." <em class="text-slate-500 dark:text-slate-400">Int. Congress on Rheology</em>, Kyoto, 2016.</p>
+                </div>
+
             </div>
+        </section>
+
+        <!-- Awards -->
+        <section>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white border-b-2 border-brand-500 pb-2 mb-8 inline-block">Awards & Fellowships</h2>
+            <ul class="space-y-3 text-slate-600 dark:text-slate-400 text-sm">
+                <li class="flex gap-3"><span class="text-brand-500">›</span>Society of Rheology Student Travel Grant (2020)</li>
+                <li class="flex gap-3"><span class="text-brand-500">›</span>IITB-Monash Institute Fellowship (2016–2021)</li>
+                <li class="flex gap-3"><span class="text-brand-500">›</span>GATE Fellowship, Government of India (2014–2016)</li>
+                <li class="flex gap-3"><span class="text-brand-500">›</span>II Prize, AMU Future Energy Leaders Conclave (2013)</li>
+            </ul>
         </section>
 
     </main>
 
-    <footer class="bg-slate-900 dark:bg-black py-8 text-center text-slate-400 transition-colors duration-300">
-        <p>&copy; 2026 Dr. Mohamad Imaran. All rights reserved.</p>
+    <footer class="bg-slate-900 dark:bg-black py-10 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-400 text-sm">&copy; 2026 Dr. Mohammad Imaran. All rights reserved.</p>
+                <div class="flex items-center gap-5">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="text-slate-400 hover:text-brand-500 transition text-sm">LinkedIn</a>
+                    <a href="https://github.com/your-profile" target="_blank" rel="noopener" class="text-slate-400 hover:text-brand-500 transition text-sm">GitHub</a>
+                    <a href="https://doi.org/10.1016/j.cpc.2024.109290" target="_blank" rel="noopener" class="text-slate-400 hover:text-brand-500 transition text-sm">Google Scholar</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="js/theme.js"></script>

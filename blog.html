@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Dr. Mohamad Imaran</title>
+    <title>Blog | Dr. Mohammad Imaran</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,16 +23,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 font-bold text-xl text-brand-900 dark:text-brand-500">
-                    <a href="index.html">Mohamad Imaran</a>
+                    <a href="index.html">Mohammad Imaran</a>
                 </div>
-                <div class="flex items-center space-x-8">
-                    <div class="hidden md:flex space-x-8">
-                        <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Home</a>
-                        <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Projects</a>
-                        <a href="cv.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">CV</a>
+                <div class="flex items-center space-x-2">
+                    <div class="hidden md:flex space-x-8 mr-4">
+                        <a href="index.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 dark:hover:text-brand-500 transition">Home</a>
+                        <a href="projects.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 dark:hover:text-brand-500 transition">Projects</a>
+                        <a href="cv.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 dark:hover:text-brand-500 transition">CV</a>
                         <a href="blog.html" class="text-brand-700 dark:text-brand-500 font-semibold border-b-2 border-brand-500 pb-1">Blog</a>
-                        <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 transition">Contact</a>
+                        <a href="contact.html" class="text-slate-500 dark:text-slate-300 hover:text-brand-700 dark:hover:text-brand-500 transition">Contact</a>
                     </div>
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Open Menu">
+                        <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                        <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
                     <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:ring-2 hover:ring-brand-500 transition-all focus:outline-none">
                         <span id="theme-toggle-dark-icon" class="hidden text-xl">🌙</span>
                         <span id="theme-toggle-light-icon" class="hidden text-xl">☀️</span>
@@ -40,37 +44,73 @@
                 </div>
             </div>
         </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+            <div class="px-4 py-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Home</a>
+                <a href="projects.html" class="block px-3 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Projects</a>
+                <a href="cv.html" class="block px-3 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">CV</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-lg text-brand-700 dark:text-brand-500 font-semibold bg-brand-50 dark:bg-slate-800">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Contact</a>
+            </div>
+        </div>
     </nav>
 
     <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 py-16 transition-colors duration-300">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Research & Insights</h1>
-            <p class="text-xl text-slate-500 dark:text-slate-400">Writings on HPC, computational modelling, and industry trends.</p>
+            <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-3">Research & Insights</h1>
+            <p class="text-lg text-slate-500 dark:text-slate-400">Technical writing on HPC, computational simulation, and applied engineering.</p>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-16 flex-grow space-y-10">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-16 flex-grow space-y-8">
+
         <article class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition">
-            <p class="text-sm text-brand-500 font-semibold mb-3 tracking-wide uppercase">March 2, 2026</p>
-            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">
-                <a href="#" class="hover:text-brand-700 dark:hover:text-brand-500 transition">Accelerating Granular Flow Simulations with OpenACC</a>
-            </h2>
-            <p class="text-slate-600 dark:text-slate-400 mb-6">A deep dive into porting legacy CPU-bound DEM solvers to GPU architectures using directive-based programming paradigms to achieve massive speedups.</p>
-            <a href="#" class="text-brand-700 dark:text-brand-500 font-semibold hover:underline">Read Full Article &rarr;</a>
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-500">Coming Soon</span>
+                <span class="text-xs text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">SPH · GPU</span>
+            </div>
+            <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-3">When to Choose SPH over CFD: A Practical Guide for Industrial Engineers</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-5">Smoothed Particle Hydrodynamics has distinct advantages over mesh-based CFD for problems involving free surfaces, complex moving boundaries, and fluid–structure interaction. This post will break down when each approach is the better tool — and when SPH–DEM coupling is worth the extra complexity.</p>
+            <span class="text-slate-400 text-sm italic">Article in preparation</span>
         </article>
 
         <article class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition">
-            <p class="text-sm text-brand-500 font-semibold mb-3 tracking-wide uppercase">February 15, 2026</p>
-            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">
-                <a href="#" class="hover:text-brand-700 dark:hover:text-brand-500 transition">Scale-Up Analytics in Pharma Manufacturing</a>
-            </h2>
-            <p class="text-slate-600 dark:text-slate-400 mb-6">Exploring how physical process modelling combined with data science is reducing experimental overhead and accelerating time-to-market for fine chemicals.</p>
-            <a href="#" class="text-brand-700 dark:text-brand-500 font-semibold hover:underline">Read Full Article &rarr;</a>
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-500">Coming Soon</span>
+                <span class="text-xs text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">DEM · Non-Spherical</span>
+            </div>
+            <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Non-Spherical DEM: Why Particle Shape Matters More Than You Think</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-5">Most industrial DEM studies default to sphere-equivalent particles for computational convenience. For many powders and bulk solids — particularly in pharma and minerals — this introduces systematic errors in predicted flow behaviour, packing density, and segregation. This post explores the state of the art in non-spherical DEM and when the added cost is justified.</p>
+            <span class="text-slate-400 text-sm italic">Article in preparation</span>
         </article>
+
+        <article class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-500">Coming Soon</span>
+                <span class="text-xs text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">GPU · OpenACC</span>
+            </div>
+            <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-3">GPU-Porting Legacy Fortran: Lessons from the NEMO Ocean Model</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-5">OpenACC is often overlooked in favour of CUDA for GPU porting, but for large legacy Fortran codebases it offers a pragmatic, incremental path to GPU acceleration. Drawing on experience porting sections of the NEMO ocean model for the Met Office, this post covers practical profiling, loop-level directives, and the pitfalls that catch even experienced developers.</p>
+            <span class="text-slate-400 text-sm italic">Article in preparation</span>
+        </article>
+
+        <div class="text-center py-8">
+            <p class="text-slate-400 dark:text-slate-600 text-sm">Articles will be published here. Follow on <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="text-brand-500 hover:underline">LinkedIn</a> to be notified.</p>
+        </div>
+
     </main>
 
-    <footer class="bg-slate-900 dark:bg-black py-8 text-center text-slate-400 transition-colors duration-300">
-        <p>&copy; 2026 Dr. Mohamad Imaran. All rights reserved.</p>
+    <footer class="bg-slate-900 dark:bg-black py-10 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-400 text-sm">&copy; 2026 Dr. Mohammad Imaran. All rights reserved.</p>
+                <div class="flex items-center gap-5">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="text-slate-400 hover:text-brand-500 transition text-sm">LinkedIn</a>
+                    <a href="https://github.com/your-profile" target="_blank" rel="noopener" class="text-slate-400 hover:text-brand-500 transition text-sm">GitHub</a>
+                    <a href="https://scholar.google.com/citations?user=your-id" target="_blank" rel="noopener" class="text-slate-400 hover:text-brand-500 transition text-sm">Google Scholar</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="js/theme.js"></script>
